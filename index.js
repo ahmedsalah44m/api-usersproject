@@ -1,8 +1,8 @@
 const express = require("express");
 require("dotenv").config()
 const mongoose = require("mongoose");
-const userRouter = require("./route/users.route");
-const adminRouter = require("./route/admin.route");
+const userRouter = require("./api/users.route");
+const adminRouter = require("./api/admin.route");
 const app = express();
 const url = process.env.MONGO_URL
 const {ERROR} = require("./utils/httpStatusText");
